@@ -32,6 +32,16 @@ class DeliveryTracking
     }
 
     /**
+     * @param string $trackingNumber
+     *
+     * @return DeliveryStatus
+     */
+    public function getDeliveredStatus($trackingNumber)
+    {
+        return $this->deliveryService->getDeliveredStatus($trackingNumber);
+    }
+
+    /**
      * @param string $reference
      *
      * @return DeliveryStatus

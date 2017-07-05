@@ -14,6 +14,12 @@ interface DeliveryServiceInterface
     public function getDeliveryStatus($trackingNumber);
 
     /**
+     * @param $trackingNumber
+     * @return DeliveryStatus
+     */
+    public function getDeliveredStatus($trackingNumber);
+
+    /**
      * @param array $trackingNumbers
      * @return array | DeliveryStatus[]
      */
@@ -36,6 +42,12 @@ interface DeliveryServiceInterface
      * @return DeliveryEvent
      */
     public function getLastEvent($trackingNumber);
+
+    /**
+     * @param $trackingNumber
+     * @return DeliveryEvent
+     */
+    public function getDeliveredEventIfExists($trackingNumber);
 
     /**
      * @param $trackingNumbers

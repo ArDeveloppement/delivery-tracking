@@ -34,4 +34,23 @@ trait ChronopostCodesTransformer
 
         return $state;
     }
+
+    /**
+     * @param array $events
+     *
+     * @return null | object
+     *
+     */
+    protected function isDeliveredStateFromEvents($events)
+    {
+        $event = null;
+
+        foreach ($events as $event) {
+            if ('D' === trim($event->code)) {
+                return $event;
+            }
+        }
+
+        return $event;
+    }
 }

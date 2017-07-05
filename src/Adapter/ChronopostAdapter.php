@@ -32,6 +32,16 @@ EOT;
     }
 
     /**
+     * @param string $trackingNumber
+     *
+     * @return DeliveryStatus
+     */
+    public function getDeliveredStatusIfExists($trackingNumber)
+    {
+        return $this->getDeliveredEventIfExists($trackingNumber)->getStatus();
+    }
+
+    /**
      * @param array $trackingNumbers
      *
      * @return array | DeliveryStatus[]
@@ -88,6 +98,38 @@ EOT;
         }
 
         return $lastEvent;
+    }
+
+    /**
+     * @param string $trackingNumber
+     *
+     * @return DeliveryEvent
+     */
+    public function getDeliveredEventIfExists($trackingNumber)
+    {
+        $fp = fopen(sprintf(self::BASE_URL, $trackingNumber), 'r');
+        $xml = stream_get_contents($fp);
+        fclose($fp);
+        $xml = new \SimpleXMLElement($xml);
+
+        /* Registering needed namespaces. See http://stackoverflow.com/questions/10322464/ */
+        $xml->registerXPathNamespace('soap', 'http://schemas.xmlsoap.org/soap/envelope/');
+        $xml->registerXPathNamespace('ns1', 'http://cxf.tracking.soap.chronopost.fr/');
+
+
+        $events = $xml->xpath('//soap:Body/ns1:trackSkybillResponse/return/listEvents/events');
+
+        if (empty($events)) {
+            $this->throwDataNotFoundException();
+        }
+
+        $event = $this->isDeliveredStateFromEvents($events);
+
+        return new DeliveryEvent(
+            $trackingNumber,
+            new DateTime(trim($event->eventDate)),
+            $this->getStateFromCode(trim($event->code))
+        );
     }
 
     /**
