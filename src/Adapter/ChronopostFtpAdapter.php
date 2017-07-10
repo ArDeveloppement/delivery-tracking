@@ -103,6 +103,14 @@ class ChronopostFtpAdapter extends AbstractFtpAdapter implements DeliveryService
     }
 
     /**
+     * @param string $trackingNumber
+     */
+    public function getDeliveredStatusIfExists($trackingNumber)
+    {
+        // Must be implemented
+    }
+
+    /**
      * @param array $trackingNumbers
      *
      * @return array | DeliveryStatus[]
@@ -139,6 +147,14 @@ class ChronopostFtpAdapter extends AbstractFtpAdapter implements DeliveryService
         }
 
         return $this->events[$trackingNumber];
+    }
+
+    /**
+     * @param string $trackingNumber
+     */
+    public function getDeliveredEventIfExists($trackingNumber)
+    {
+        // Must be implemented
     }
 
     /**
