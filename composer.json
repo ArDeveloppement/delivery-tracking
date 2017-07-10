@@ -1,11 +1,11 @@
 {
-    "name": "lwiesel/delivery-tracking",
-    "description": "A framework agnostic delivery tracking library for PHP 5.4+",
+    "name": "ArDeveloppement/delivery-tracking",
+    "description": "A framework agnostic delivery tracking library for PHP 5.4+ (fork from lwiesel work)",
     "keywords": [
         "lwiesel",
         "delivery-tracking"
     ],
-    "homepage": "https://github.com/lwiesel/delivery-tracking",
+    "homepage": "https://github.com/ArDeveloppement/delivery-tracking",
     "license": "MIT",
     "type": "library",
     "authors": [
