@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\LWI\DeliveryTracking;
+namespace spec\ArDev\DeliveryTracking;
 
-use LWI\DeliveryTracking\DeliveryStatus;
+use ArDev\DeliveryTracking\DeliveryStatus;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -17,7 +17,7 @@ class DeliveryStatusSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('LWI\DeliveryTracking\DeliveryStatus');
+        $this->shouldHaveType('ArDev\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_have_a_state()

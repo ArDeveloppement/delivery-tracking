@@ -8,6 +8,6 @@ code_coverage:
 
 suites:
     event_suite:
-        namespace: LWI\DeliveryTracking
-        psr4_prefix: LWI\DeliveryTracking
+        namespace: ArDev\DeliveryTracking
+        psr4_prefix: ArDev\DeliveryTracking
 formatter.name: pretty

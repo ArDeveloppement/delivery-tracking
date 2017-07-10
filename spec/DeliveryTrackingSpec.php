@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\LWI\DeliveryTracking;
+namespace spec\ArDev\DeliveryTracking;
 
-use LWI\DeliveryTracking\DeliveryEvent;
-use LWI\DeliveryTracking\DeliveryServiceInterface;
-use LWI\DeliveryTracking\DeliveryStatus;
+use ArDev\DeliveryTracking\DeliveryEvent;
+use ArDev\DeliveryTracking\DeliveryServiceInterface;
+use ArDev\DeliveryTracking\DeliveryStatus;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -27,25 +27,25 @@ class DeliveryTrackingSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('LWI\DeliveryTracking\DeliveryTracking');
+        $this->shouldHaveType('ArDev\DeliveryTracking\DeliveryTracking');
     }
 
     function it_should_retrieve_a_delivery_status_from_a_tracking_number()
     {
         $this->getDeliveryStatus('trackingNumber')
-            ->shouldBeAnInstanceOf('LWI\DeliveryTracking\DeliveryStatus');
+            ->shouldBeAnInstanceOf('ArDev\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_retrieve_a_delivery_status_from_an_internal_reference()
     {
         $this->getDeliveryStatusByInternalReference('internalReference')
-            ->shouldBeAnInstanceOf('LWI\DeliveryTracking\DeliveryStatus');
+            ->shouldBeAnInstanceOf('ArDev\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_retrieve_the_last_delivery_event_from_a_tracking_number()
     {
         $this->getLastEvent('trackingNumber')
-            ->shouldBeAnInstanceOf('LWI\DeliveryTracking\DeliveryEvent');
+            ->shouldBeAnInstanceOf('ArDev\DeliveryTracking\DeliveryEvent');
     }
 
     function it_should_retrieve_a_tracking_number_from_an_internal_reference()

@@ -1,6 +1,6 @@
 <?php
 
-namespace LWI\DeliveryTracking\Command;
+namespace ArDev\DeliveryTracking\Command;
 
 use League\CLImate\CLImate;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\LWI\DeliveryTracking\Exception;
+namespace spec\ArDev\DeliveryTracking\Exception;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -14,7 +14,7 @@ class UnsupportedFeatureExceptionSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('LWI\DeliveryTracking\Exception\UnsupportedFeatureException');
+        $this->shouldHaveType('ArDev\DeliveryTracking\Exception\UnsupportedFeatureException');
         $this->shouldBeAnInstanceOf('\Exception');
     }
 

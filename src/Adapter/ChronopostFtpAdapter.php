@@ -1,14 +1,14 @@
 <?php
 
-namespace LWI\DeliveryTracking\Adapter;
+namespace ArDev\DeliveryTracking\Adapter;
 
-use LWI\DeliveryTracking\Behavior\ChronopostCodesTransformer;
-use LWI\DeliveryTracking\Behavior\ExceptionThrower;
-use LWI\DeliveryTracking\DeliveryEvent;
-use LWI\DeliveryTracking\DeliveryServiceInterface;
-use LWI\DeliveryTracking\DeliveryStatus;
-use LWI\DeliveryTracking\Exception\DataNotFoundException;
-use LWI\DeliveryTracking\Parser\FixedWidthColumnsParser;
+use ArDev\DeliveryTracking\Behavior\ChronopostCodesTransformer;
+use ArDev\DeliveryTracking\Behavior\ExceptionThrower;
+use ArDev\DeliveryTracking\DeliveryEvent;
+use ArDev\DeliveryTracking\DeliveryServiceInterface;
+use ArDev\DeliveryTracking\DeliveryStatus;
+use ArDev\DeliveryTracking\Exception\DataNotFoundException;
+use ArDev\DeliveryTracking\Parser\FixedWidthColumnsParser;
 use \DateTime;
 use \DateTimeZone;
 

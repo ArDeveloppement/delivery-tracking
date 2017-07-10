@@ -1,13 +1,13 @@
 <?php
 
-namespace LWI\DeliveryTracking\Adapter;
+namespace ArDev\DeliveryTracking\Adapter;
 
-use LWI\DeliveryTracking\Behavior\ChronopostCodesTransformer;
-use LWI\DeliveryTracking\Behavior\ExceptionThrower;
-use LWI\DeliveryTracking\DeliveryEvent;
-use LWI\DeliveryTracking\DeliveryServiceInterface;
-use LWI\DeliveryTracking\DeliveryStatus;
-use LWI\DeliveryTracking\Exception\UnsupportedFeatureException;
+use ArDev\DeliveryTracking\Behavior\ChronopostCodesTransformer;
+use ArDev\DeliveryTracking\Behavior\ExceptionThrower;
+use ArDev\DeliveryTracking\DeliveryEvent;
+use ArDev\DeliveryTracking\DeliveryServiceInterface;
+use ArDev\DeliveryTracking\DeliveryStatus;
+use ArDev\DeliveryTracking\Exception\UnsupportedFeatureException;
 use \DateTime;
 
 /**

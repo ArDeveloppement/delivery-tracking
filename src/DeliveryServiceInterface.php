@@ -1,6 +1,6 @@
 <?php
 
-namespace LWI\DeliveryTracking;
+namespace ArDev\DeliveryTracking;
 
 /**
  * Interface DeliveryServiceInterface

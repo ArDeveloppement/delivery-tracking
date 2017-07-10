@@ -29,12 +29,12 @@
 
     "autoload": {
         "psr-4": {
-            "LWI\\DeliveryTracking\\": "src/"
+            "ArDev\\DeliveryTracking\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LWI\\DeliveryTracking\\Test\\": "tests/"
+            "ArDev\\DeliveryTracking\\Test\\": "tests/"
         }
     },
 

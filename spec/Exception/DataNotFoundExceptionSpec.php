@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\LWI\DeliveryTracking\Exception;
+namespace spec\ArDev\DeliveryTracking\Exception;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +9,7 @@ class DataNotFoundExceptionSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('LWI\DeliveryTracking\Exception\DataNotFoundException');
+        $this->shouldHaveType('ArDev\DeliveryTracking\Exception\DataNotFoundException');
         $this->shouldBeAnInstanceOf('\Exception');
     }
 

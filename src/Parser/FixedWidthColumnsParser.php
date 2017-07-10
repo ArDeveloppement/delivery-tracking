@@ -1,6 +1,6 @@
 <?php
 
-namespace LWI\DeliveryTracking\Parser;
+namespace ArDev\DeliveryTracking\Parser;
 
 /**
  * Class FixedWidthColumnsParser

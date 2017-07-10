@@ -1,9 +1,9 @@
 <?php
 
-namespace LWI\DeliveryTracking\Command;
+namespace ArDev\DeliveryTracking\Command;
 
-use LWI\DeliveryTracking\Adapter\ChronopostAdapter;
-use LWI\DeliveryTracking\DeliveryTracking;
+use ArDev\DeliveryTracking\Adapter\ChronopostAdapter;
+use ArDev\DeliveryTracking\DeliveryTracking;
 use League\CLImate\CLImate;
 
 /**
