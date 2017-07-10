@@ -4,3 +4,4 @@ vendor
 composer.lock
 coverage
 coverage.clover
+.idea
