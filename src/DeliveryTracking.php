@@ -36,9 +36,9 @@ class DeliveryTracking
      *
      * @return DeliveryStatus
      */
-    public function getDeliveredStatus($trackingNumber)
+    public function getDeliveredStatusIfExists($trackingNumber)
     {
-        return $this->deliveryService->getDeliveredStatus($trackingNumber);
+        return $this->deliveryService->getDeliveredStatusIfExists($trackingNumber);
     }
 
     /**
