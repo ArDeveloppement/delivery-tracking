@@ -14,12 +14,6 @@ interface DeliveryServiceInterface
     public function getDeliveryStatus($trackingNumber);
 
     /**
-     * @param $trackingNumber
-     * @return DeliveryStatus
-     */
-    public function getDeliveredStatus($trackingNumber);
-
-    /**
      * @param array $trackingNumbers
      * @return array | DeliveryStatus[]
      */
