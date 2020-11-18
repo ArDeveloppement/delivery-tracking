@@ -1,6 +1,6 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Adapter;
+namespace CoSpirit\DeliveryTracking\Adapter;
 
 abstract class AbstractFtpAdapter
 {

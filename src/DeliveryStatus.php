@@ -1,6 +1,6 @@
 <?php
 
-namespace ArDev\DeliveryTracking;
+namespace CoSpirit\DeliveryTracking;
 
 /**
  * Class DeliveryStatus

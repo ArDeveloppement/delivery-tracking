@@ -1,14 +1,14 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Adapter;
+namespace CoSpirit\DeliveryTracking\Adapter;
 
-use ArDev\DeliveryTracking\Behavior\ChronopostCodesTransformer;
-use ArDev\DeliveryTracking\Behavior\ExceptionThrower;
-use ArDev\DeliveryTracking\DeliveryEvent;
-use ArDev\DeliveryTracking\DeliveryServiceInterface;
-use ArDev\DeliveryTracking\DeliveryStatus;
-use ArDev\DeliveryTracking\Exception\DataNotFoundException;
-use ArDev\DeliveryTracking\Parser\FixedWidthColumnsParser;
+use CoSpirit\DeliveryTracking\Behavior\ChronopostCodesTransformer;
+use CoSpirit\DeliveryTracking\Behavior\ExceptionThrower;
+use CoSpirit\DeliveryTracking\DeliveryEvent;
+use CoSpirit\DeliveryTracking\DeliveryServiceInterface;
+use CoSpirit\DeliveryTracking\DeliveryStatus;
+use CoSpirit\DeliveryTracking\Exception\DataNotFoundException;
+use CoSpirit\DeliveryTracking\Parser\FixedWidthColumnsParser;
 use \DateTime;
 use \DateTimeZone;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\ArDev\DeliveryTracking;
+namespace spec\CoSpirit\DeliveryTracking;
 
-use ArDev\DeliveryTracking\DeliveryStatus;
+use CoSpirit\DeliveryTracking\DeliveryStatus;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -17,7 +17,7 @@ class DeliveryStatusSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('ArDev\DeliveryTracking\DeliveryStatus');
+        $this->shouldHaveType('CoSpirit\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_have_a_state()

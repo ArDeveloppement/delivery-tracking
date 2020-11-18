@@ -1,6 +1,6 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Command;
+namespace CoSpirit\DeliveryTracking\Command;
 
 use League\CLImate\CLImate;
 
