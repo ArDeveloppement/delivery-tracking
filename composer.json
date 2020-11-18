@@ -1,11 +1,11 @@
 {
-    "name": "ardeveloppement/delivery-tracking",
+    "name": "cospirit/delivery-tracking",
     "description": "A framework agnostic delivery tracking library for PHP 5.4+ (fork from lwiesel work)",
     "keywords": [
         "lwiesel",
         "delivery-tracking"
     ],
-    "homepage": "https://github.com/ArDeveloppement/delivery-tracking",
+    "homepage": "https://github.com/cospirit/delivery-tracking",
     "license": "MIT",
     "type": "library",
     "authors": [

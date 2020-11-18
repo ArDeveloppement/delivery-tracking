@@ -13,7 +13,7 @@ This library respects PSR-1, PSR-2, and PSR-4.
 Via Composer
 
 ``` bash
-$ composer require ardeveloppement/delivery-tracking
+$ composer require cospirit/delivery-tracking
 ```
 
 ## Usage
