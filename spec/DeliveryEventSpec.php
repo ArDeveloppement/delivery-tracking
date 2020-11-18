@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\ArDev\DeliveryTracking;
+namespace spec\CoSpirit\DeliveryTracking;
 
-use ArDev\DeliveryTracking\DeliveryStatus;
+use CoSpirit\DeliveryTracking\DeliveryStatus;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -10,7 +10,7 @@ class DeliveryEventSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('ArDev\DeliveryTracking\DeliveryEvent');
+        $this->shouldHaveType('CoSpirit\DeliveryTracking\DeliveryEvent');
     }
 
     function let(\DateTime $eventDate, DeliveryStatus $deliveryStatus)
@@ -30,7 +30,7 @@ class DeliveryEventSpec extends ObjectBehavior
 
     function it_should_have_a_status()
     {
-        $this->getStatus()->shouldHaveType('ArDev\DeliveryTracking\DeliveryStatus');
+        $this->getStatus()->shouldHaveType('CoSpirit\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_be_transformed_to_an_array(\DateTime $eventDate, DeliveryStatus $deliveryStatus)

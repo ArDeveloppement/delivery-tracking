@@ -1,6 +1,6 @@
 ---
 suites:
     event_suite:
-        namespace: ArDev\DeliveryTracking
-        psr4_prefix: ArDev\DeliveryTracking
+        namespace: CoSpirit\DeliveryTracking
+        psr4_prefix: CoSpirit\DeliveryTracking
 formatter.name: pretty

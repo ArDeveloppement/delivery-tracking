@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\ArDev\DeliveryTracking;
+namespace spec\CoSpirit\DeliveryTracking;
 
-use ArDev\DeliveryTracking\DeliveryEvent;
-use ArDev\DeliveryTracking\DeliveryServiceInterface;
-use ArDev\DeliveryTracking\DeliveryStatus;
+use CoSpirit\DeliveryTracking\DeliveryEvent;
+use CoSpirit\DeliveryTracking\DeliveryServiceInterface;
+use CoSpirit\DeliveryTracking\DeliveryStatus;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -27,25 +27,25 @@ class DeliveryTrackingSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('ArDev\DeliveryTracking\DeliveryTracking');
+        $this->shouldHaveType('CoSpirit\DeliveryTracking\DeliveryTracking');
     }
 
     function it_should_retrieve_a_delivery_status_from_a_tracking_number()
     {
         $this->getDeliveryStatus('trackingNumber')
-            ->shouldBeAnInstanceOf('ArDev\DeliveryTracking\DeliveryStatus');
+            ->shouldBeAnInstanceOf('CoSpirit\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_retrieve_a_delivery_status_from_an_internal_reference()
     {
         $this->getDeliveryStatusByInternalReference('internalReference')
-            ->shouldBeAnInstanceOf('ArDev\DeliveryTracking\DeliveryStatus');
+            ->shouldBeAnInstanceOf('CoSpirit\DeliveryTracking\DeliveryStatus');
     }
 
     function it_should_retrieve_the_last_delivery_event_from_a_tracking_number()
     {
         $this->getLastEvent('trackingNumber')
-            ->shouldBeAnInstanceOf('ArDev\DeliveryTracking\DeliveryEvent');
+            ->shouldBeAnInstanceOf('CoSpirit\DeliveryTracking\DeliveryEvent');
     }
 
     function it_should_retrieve_a_tracking_number_from_an_internal_reference()

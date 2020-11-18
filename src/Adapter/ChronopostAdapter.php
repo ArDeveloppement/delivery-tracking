@@ -1,13 +1,13 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Adapter;
+namespace CoSpirit\DeliveryTracking\Adapter;
 
-use ArDev\DeliveryTracking\Behavior\ChronopostCodesTransformer;
-use ArDev\DeliveryTracking\Behavior\ExceptionThrower;
-use ArDev\DeliveryTracking\DeliveryEvent;
-use ArDev\DeliveryTracking\DeliveryServiceInterface;
-use ArDev\DeliveryTracking\DeliveryStatus;
-use ArDev\DeliveryTracking\Exception\UnsupportedFeatureException;
+use CoSpirit\DeliveryTracking\Behavior\ChronopostCodesTransformer;
+use CoSpirit\DeliveryTracking\Behavior\ExceptionThrower;
+use CoSpirit\DeliveryTracking\DeliveryEvent;
+use CoSpirit\DeliveryTracking\DeliveryServiceInterface;
+use CoSpirit\DeliveryTracking\DeliveryStatus;
+use CoSpirit\DeliveryTracking\Exception\UnsupportedFeatureException;
 use \DateTime;
 
 /**

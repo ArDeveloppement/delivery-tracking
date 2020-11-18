@@ -1,6 +1,6 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Exception;
+namespace CoSpirit\DeliveryTracking\Exception;
 
 use \Exception;
 

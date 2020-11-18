@@ -1,9 +1,9 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Command;
+namespace CoSpirit\DeliveryTracking\Command;
 
-use ArDev\DeliveryTracking\Adapter\ChronopostFtpAdapter;
-use ArDev\DeliveryTracking\DeliveryTracking;
+use CoSpirit\DeliveryTracking\Adapter\ChronopostFtpAdapter;
+use CoSpirit\DeliveryTracking\DeliveryTracking;
 use League\CLImate\CLImate;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Parser;
+namespace CoSpirit\DeliveryTracking\Parser;
 
 /**
  * Class FixedWidthColumnsParser

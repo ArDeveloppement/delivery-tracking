@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\ArDev\DeliveryTracking\Exception;
+namespace spec\CoSpirit\DeliveryTracking\Exception;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +9,7 @@ class DataNotFoundExceptionSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('ArDev\DeliveryTracking\Exception\DataNotFoundException');
+        $this->shouldHaveType('CoSpirit\DeliveryTracking\Exception\DataNotFoundException');
         $this->shouldBeAnInstanceOf('\Exception');
     }
 

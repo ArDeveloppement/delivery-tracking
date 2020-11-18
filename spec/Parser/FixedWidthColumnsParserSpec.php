@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\ArDev\DeliveryTracking\Parser;
+namespace spec\CoSpirit\DeliveryTracking\Parser;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -22,7 +22,7 @@ class FixedWidthColumnsParserSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('ArDev\DeliveryTracking\Parser\FixedWidthColumnsParser');
+        $this->shouldHaveType('CoSpirit\DeliveryTracking\Parser\FixedWidthColumnsParser');
     }
 
     function it_should_parse_one_line()

@@ -1,8 +1,8 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Behavior;
+namespace CoSpirit\DeliveryTracking\Behavior;
 
-use ArDev\DeliveryTracking\DeliveryStatus;
+use CoSpirit\DeliveryTracking\DeliveryStatus;
 
 trait ChronopostCodesTransformer
 {

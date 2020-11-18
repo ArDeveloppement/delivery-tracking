@@ -1,9 +1,9 @@
 <?php
 
-namespace ArDev\DeliveryTracking\Behavior;
+namespace CoSpirit\DeliveryTracking\Behavior;
 
-use ArDev\DeliveryTracking\Exception\DataNotFoundException;
-use ArDev\DeliveryTracking\Exception\UnsupportedFeatureException;
+use CoSpirit\DeliveryTracking\Exception\DataNotFoundException;
+use CoSpirit\DeliveryTracking\Exception\UnsupportedFeatureException;
 
 /**
  * Class ExceptionThrower
